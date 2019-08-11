@@ -5,10 +5,10 @@
 由于前后端分离，需要在 controller 上加上 @CrossOrigin 来支持跨域
 controller 中的异常在 catch 块中抛出，统一放在 exception/ExceptionAdvice 类中处理。
 
-##Service
+## Service
 在每个 Service 的实现类上添加 @Service 注解
 
-##Mapper
+## Mapper
 使用的是 mybatis。在 mapper 文件下定义接口，每个接口上添加 @Mapper 注解。
 然后在 resource/mapper 文件目录下定义 mxl 文件。
 *注意:接口文件和 xml 文件命名要一致,统一为 ***mapper 这样的形式。另外 xml 中，每个文件的 namespace 需要对应接口路径*
